@@ -5,7 +5,7 @@ function on_success(position){
     document.getElementById("acc").innerHTML = "Accuracy =" +position.coords.accurancy;
     document.getElementById("altitude").innerHTML = "Altitude =" +position.coords.altitude;
     var latlon = position.coords.latitude + "," +position.coords.longitude;
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyCZytlvDaWCwxfwutuvTpszkfWBI9JtzvA";
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyB2So9VV3VEHqy2FDhxRtyim7t5a0GHsws";
     document.getElementById("map").innerHTML ="<img src='"+img_url+"'>";
     function on_error(e){
         document.getElementById("text").innerHTML=e.message;
